@@ -1,17 +1,10 @@
 (function() {
 	
 	var arr = ['1', '4', '54', '-32', '0', '21', '9', '100'];
-	let newArr = [];
 
-	var a = arr.map((string) => {
-		newArr.push(parseInt(string));
-	});
+	var res = arr.map((el)=> parseInt(el)).reduce((max, value) => Math.max(max, value), 0);
 
-	let b = Math.max(...newArr);
-
-	let c = Math.min(...newArr);
-
-	console.log(b, c);
+	console.log(res);
 
 
 
@@ -40,6 +33,10 @@ var a = arr.map((string) => {
 	});
 
 	let b = Math.max(...newArr);
+
+	let c = Math.min(...newArr);
+
+	console.log(b, c);
 
 </script> */}
 
